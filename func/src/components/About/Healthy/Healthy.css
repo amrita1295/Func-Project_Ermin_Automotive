@@ -1,0 +1,18 @@
+.bg-healthy{
+    background-color: #FBF8F0; 
+    background-image: url('../../../assets/float-5.png');
+}
+.bg-healthy-2{
+    background-color: rgba(18, 25, 66, 1);
+}
+.border-rad-healthy{
+    border-radius: 80px;
+}
+.hero {
+    display: grid;
+    width: 90%;
+    place-items: center;
+    background-size: cover;
+    background-position: center;
+}
+

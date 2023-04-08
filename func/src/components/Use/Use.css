@@ -1,0 +1,41 @@
+.bg-use{
+    background-color: #FBF8F0;  
+}
+
+
+.use-title{
+    color: #000000;
+    font-size: 40px;
+    font-family: "Oswald", sans-serif;
+    font-weight: 700;
+}
+.main{
+    position: relative; 
+}
+
+.img-1{
+    position: relative;
+
+}
+.img-2{
+    position: absolute;
+    top: 80px;
+}
+
+.img-3{
+    position: absolute;
+    top: 4400px;
+    right: 360px;
+}
+
+.use-para{
+    color: #000000;
+    font-weight: 600;
+}
+
+.badge1{
+    transform: rotate(-20deg);
+}
+
+
+

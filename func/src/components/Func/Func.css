@@ -1,0 +1,39 @@
+.bg-func{
+    background-color: #FBF8F0;  
+}
+
+.func-title{
+    color: #000000;
+    font-size: 40px;
+    font-family: "Oswald", sans-serif;
+    font-weight: 700;
+}
+
+.func-title-color{
+    color: rgba(178, 1, 73, 1);
+}
+.func-title-heading{
+    color: #000000;
+    font-size: 25px;
+    font-family: "Oswald", sans-serif;
+    font-weight: 600;
+}
+.func-pic{
+    width: 1800px;
+}
+.hero-content-2 {
+    z-index: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100rem/* 1280px */;
+    gap: 1rem/* 16px */;
+}
+.hero {
+    display: grid;
+    width: 100%;
+    place-items: center;
+    background-size: cover;
+    background-position: center;
+}
+

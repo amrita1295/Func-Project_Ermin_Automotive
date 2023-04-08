@@ -1,0 +1,254 @@
+ .bg-header {
+  background-color: #fbf8f0;
+}
+
+.main-1 {
+  position: relative;
+}
+
+.image-1 {
+  position: relative;
+}
+
+.image-2 {
+  position: absolute;
+}
+
+
+.w-100{
+  width: 36rem;
+}
+.mt-100{
+  top: 27rem;
+}
+.w-img{
+  width: 60vw;
+}
+.w-33{
+width: 44%;
+}
+.w-width{
+  width: 60%;
+}
+.w-dum{
+  width: 60%;
+}
+.rec-width{
+  width: 45%;
+}
+@media only screen and (min-width: 401px) and (max-width:440px)
+{
+  .label4{
+      margin-right:9.6rem;
+      margin-top:1px;
+  }
+ 
+  
+ 
+}
+@media only screen and (min-width: 441px) and (max-width:490px)
+{
+  .label4{
+      margin-right:7rem;
+      margin-top:1px;
+  }
+  .margin-l{
+      margin-left: 5rem;
+  }
+   .rect{
+      margin-top: -1rem;
+   }
+   .div-section{
+      margin-top:-9rem;
+      width: 57vw;
+      margin-left: 7rem;
+   } 
+   .div-l{
+      margin-left: 4rem;
+  }
+}
+@media only screen and (min-width: 491px) and (max-width:540px)
+{
+  .label4{
+      margin-right:9.5rem;
+      margin-top:1px;
+      width: 55px;
+      height: 47px;
+  }
+  .rect{
+      margin-top: -1rem;
+   }
+   .div-section{
+      margin-top:-9.6rem;
+      width: 55vw;
+      margin-left: 10rem;
+   }  
+   .image2{
+      width: 100px;
+      height: 80px;
+   }
+   .margin-l{
+      margin-left:4rem;
+  }
+  .div-l{
+      margin-left: 4rem;
+  }
+}
+@media only screen and (min-width: 541px) and (max-width:580px)
+{
+  .margin-l{
+      margin-left:4rem;
+  }
+  .div-l{
+      margin-left: 4rem;
+  }
+  .label4{
+      margin-right:10rem;
+      margin-top:1px;
+      width: 65px;
+      height: 60px;
+  }
+  .rect{
+      margin-top: -1rem;
+   }
+    .div-section{
+      margin-top:-9.6rem;
+      width: 55vw;
+      margin-left: 10rem;
+   }  
+   .image2{
+      width: 120px;
+      height: 100px;
+   }
+}
+@media only screen and (min-width: 581px) and (max-width:640px)
+{
+  .margin-l{
+      margin-left:4rem;
+  }
+  .div-l{
+      margin-left: 4rem;
+      
+  }
+  .label4{
+      margin-right:12rem;
+      margin-top:1px;
+      width: 65px;
+      height: 60px;
+  }
+  .rect{
+      margin-top: -1.3rem;
+   }
+   .div-section{
+      margin-top:-9.9rem;
+      width: 55vw;
+      margin-left: 10rem;
+   } 
+   .image2{
+      width: 120px;
+      height: 100px;
+   }
+}
+@media only screen and (min-width: 641px) and (max-width:689px)
+{
+  .margin-l{
+      margin-left:4rem;
+  }
+  .div-l{
+      margin-left: 4rem;
+      
+  }
+  .label4{
+      margin-right:14.6rem;
+      margin-top:1px;
+      width: 65px;
+      height: 60px;
+  }
+  .rect{
+      margin-top: -1.4rem;
+   }
+   .div-section{
+      margin-top:-11.9rem;
+      width: 55vw;
+      margin-left: 10rem;
+   }  
+   .image2{
+      width: 120px;
+      height: 100px;
+   }
+}
+@media only screen and (min-width: 690px) and (max-width:767px)
+{
+  .margin-l{
+      margin-left:4rem;
+  }
+  .div-l{
+      margin-left: 4rem;
+      
+  }
+  .label4{
+      margin-right:18rem;
+      margin-top:1px;
+      width: 65px;
+      height: 60px;
+  }
+  .rect{
+      margin-top: -1.8rem;
+   }
+   .div-section{
+      margin-top:-13rem;
+      width: 55vw;
+      margin-left: 10rem;
+   }  
+   .image2{
+      width: 120px;
+      height: 100px;
+   }
+}
+
+/* .hero-content-3 {
+  z-index: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 100rem;
+  gap: 1rem;
+}
+
+.hero-3{
+  display: grid;
+  width: 100%;
+  place-items: center;
+  background-size: cover;
+  background-position: center;
+}
+
+.header-pic{
+  width: 700px;
+}  */
+
+/* .w-100{
+  width: 36rem;
+}
+.mt-100{
+  top: 27rem;
+}
+.w-img{
+  width: 60vw;
+}
+.w-33{
+width: 44%;
+}
+.w-width{
+  width: 60%;
+}
+.w-dum{
+  width: 60%;
+}
+.rec-width{
+  width: 45%;
+}
+ */
+
+
+

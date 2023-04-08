@@ -1,0 +1,22 @@
+.bg-advisor{
+    background-color: #FBF8F0;  
+}
+
+.advisor-title{
+    color: #000000;
+    font-size: 40px;
+    font-family: "Oswald", sans-serif;
+    font-weight: 700;
+}
+
+.advisor-name{
+    font-size: 16px;
+    text-align: center;
+    color: #000000;
+    font-family: "Oswald", sans-serif;
+}
+
+.advisor-desc{
+    color: #3A3A3A;
+    font-size: 14px;
+}

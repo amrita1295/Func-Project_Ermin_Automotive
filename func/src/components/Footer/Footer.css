@@ -1,0 +1,35 @@
+.bg-footer {
+  background-color: #20284e;
+}
+
+.xtra-title {
+  font-size: 40px;
+  font-family: "Oswald", sans-serif;
+}
+
+.foot {
+  color: #636363;
+}
+
+.title {
+  margin-bottom: 0.5rem /* 8px */;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.border-bottom {
+  border-bottom: 1px solid #636363ed;
+}
+
+.privacy {
+  color: #ababab;
+}
+
+.line {
+  color: #ed5009;
+}
+
+.social{
+    color: #A0A0A0;
+    font-size: 20px;
+}
