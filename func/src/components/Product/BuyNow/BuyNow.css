@@ -1,0 +1,23 @@
+.buy-bg{
+    background-color: #FBF8F0;
+}
+
+/* .button{
+    width: 28.438rem;
+    background-color: #121942;
+    color: white;
+    height: 3.125rem;
+    border-radius: 12px;
+} */
+/* .border-color{
+    border: 1px solid #B20149;;
+} */
+
+.button-1{
+    width: 455px;
+    background-color: white;
+    color: #B20149;
+    height: 50px;
+    border-radius: 12px;
+    border: 1px solid #121942;
+}

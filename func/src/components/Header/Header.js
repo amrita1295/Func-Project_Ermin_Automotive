@@ -1,6 +1,5 @@
 import React from "react";
 import Label4 from "../../assets/Label4.png";
-import image from "../../assets/Image1.png";
 import Photos from "../../assets/Photos.png";
 import dots1 from "../../assets/dots1.png";
 import rectangle from "../../assets/Rectangle 8.png";
