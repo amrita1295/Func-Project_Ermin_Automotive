@@ -128,7 +128,7 @@ const BuyNow1 = ({ checkoutHandler, amount }) => {
           <div className="flex justify-center bg-[#121942] text-white w-80 mx-auto p-3 rounded-xl">
       
           <Link to={"/login"}>
-            <button>Please Login</button>
+            <button>Login To Buy</button>
 
           </Link>
 
