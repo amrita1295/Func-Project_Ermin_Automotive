@@ -17,6 +17,7 @@ export const checkout = async (req, res) => {
   //  });
   try {
     const order = await instance.orders.create(options);
+    console.log(order.amount);
     res.status(200).json({
       success: true,
       order,
@@ -62,7 +63,7 @@ export const paymentVerification = async (req, res) => {
           {
             name: 'Product 1',
             description: 'Product 1 description',
-            amount: 5000,
+            amount:  Number(req.body.amount * 100),
             currency: 'INR',
             quantity: 1,
           }
@@ -88,35 +89,3 @@ export const paymentVerification = async (req, res) => {
     }
   };
 
-  // export const invoices = async (req, res) => {
- 
-  //   const options = {
-  //     type: 'invoice',
-  //     amount: Number(1),
-  //     line_items:[
-  //       {
-  //         name: 'Product 1',
-  //         description: 'Product 1 description',
-  //         amount: 1,
-  //         currency: 'INR',
-  //         quantity: 2,
-  //       }
-  //     ],
-  //     currency: 'INR',
-  //     description: 'Test invoice',
-  //     customer: {
-  //       name: 'John Doe',
-  //       email: 'amritasj.08@gmail.com',
-  //     },
-  //   };
-  //   try {
-  //     const invoice = await instance.invoices.create(options);
-  //     res.status(200).json({
-  //       success: true,
-  //       invoice,
-  //      })
-  //   } catch (error) {
-  //     console.log(error);
-  //     res.status(500).send('Something went wrong');
-  //   }
-  // };

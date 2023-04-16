@@ -8,12 +8,13 @@ import { Link } from "react-router-dom";
 import axios from "axios";
 import { useContext } from "react";
 import { AuthContext } from "../../../contexts/AuthProvider";
-let money = 10;
 
-const BuyNow1 = ({ checkoutHandler, amount }) => {
+
+const BuyNow1 = ({ checkoutHandler, amount}) => {
   const { user } = useContext(AuthContext);
-  console.log(user?.displayName);  // show name and email id 
-
+  // show name and email id 
+  console.log(user?.displayName, user?.email);
+  
 
 
   return (
