@@ -12,9 +12,8 @@ import { AuthContext } from "../../../contexts/AuthProvider";
 
 const BuyNow1 = ({ checkoutHandler, amount}) => {
   const { user } = useContext(AuthContext);
-  // show name and email id 
-  console.log(user?.displayName, user?.email);
-  
+ 
+
 
 
   return (

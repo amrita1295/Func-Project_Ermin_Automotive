@@ -6,18 +6,16 @@ import { Payment } from "../models/paymentModel.mjs";
 export const checkout = async (req, res) => {
  
   const options = {
-    amount: Number(req.body.amount * 100), // amount in paisa
+    amount: Number(req.body.amount)*100, // amount in paisa
     currency: 'INR',
+    notes:{
+      name:req.body.name1,
+      email:req.body.email1
+    }
+ 
   };
-  
-  //  const order=await instance.orders.create(options);
-  //  console.log(order);
-  //  res.status(200).json({
-  //   success:true
-  //  });
   try {
     const order = await instance.orders.create(options);
-    console.log(order.amount);
     res.status(200).json({
       success: true,
       order,
@@ -30,6 +28,8 @@ export const checkout = async (req, res) => {
 };
 
 export const paymentVerification = async (req, res) => {
+
+  
     const { razorpay_order_id, razorpay_payment_id, razorpay_signature } =
       req.body;
 
@@ -45,47 +45,63 @@ export const paymentVerification = async (req, res) => {
     if (isAuthentic) {
 
       // Database comes here
+
       await Payment.create({
         razorpay_order_id,
         razorpay_payment_id,
         razorpay_signature,
       });
-      res.redirect(
-        `http://localhost:3000/paymentsuccess?reference=${razorpay_payment_id}`
-      );
-      try {
-        const order = await instance.orders.fetch(razorpay_order_id);
+     
+      const order = await instance.orders.fetch(razorpay_order_id);
+      // console.log(order,"yes")
+      // console.log(order.notes.email)
+      // console.log(order.notes.name)
+      // console.log(order.amount)
 
-        await instance.invoices.create({
+      const options = {
         type: 'invoice',
-        // amount: Number(2),
+        // customer_details: {
+        //   customer_name: order.notes.name,
+        //   customer_email: order.notes.email,
+        // },
         line_items:[
           {
             name: 'Product 1',
             description: 'Product 1 description',
-            amount:  Number(req.body.amount * 100),
+            amount_paid:Number(order.amount)*100,
             currency: 'INR',
             quantity: 1,
           }
+          
         ],
         description: 'Test invoice',
         customer: {
-          name: 'Test Customer',
-          email: 'amritasj.08@gmail.com',
+         name:order.notes.name,
+         email:order.notes.email
         },
-        receipt: razorpay_order_id,
-      });
-       console.log(razorpay_order_id);
-        
+        date: Math.floor(Date.now() / 1000),
+        receipt: razorpay_order_id
+      };
+      try {
+        const invoice = await instance.invoices.create(options);
+        res.status(200).json({
+          success: true,
+          invoice,
+          
+          
+         })
       } catch (error) {
         console.log(error);
-        // res.josn(500).send('Something went wrong');
+        res.status(500).send('Something went wrong');
       }
-    } 
+}
     else {
       res.status(400).json({
+        
         success: false,
+
       });
     }
-  };
+ 
 
+  };
