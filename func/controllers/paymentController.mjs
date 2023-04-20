@@ -68,7 +68,7 @@ export const paymentVerification = async (req, res) => {
           {
             name: 'Product 1',
             description: 'Product 1 description',
-            amount_paid:Number(order.amount)*100,
+            amount:Number(order.amount)*100,
             currency: 'INR',
             quantity: 1,
           }
