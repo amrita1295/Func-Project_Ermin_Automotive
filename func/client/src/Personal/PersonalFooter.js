@@ -1,24 +1,23 @@
 import React from "react";
-import "./Footer.css";
+import "./PersonalFooter.css";
 import { FaLinkedin } from "react-icons/fa";
 import { FaInstagramSquare } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import rishiSignature from '../assets/rishi-signature.png'
 
-const Footer = () => {
-  return (
-    <div className="bg-footer pb-10 text-white">
+const PersonalFooter = () => {
+    return (
+        <div className="bg-footer pb-10">
       <footer className="footer p-10 ">
         <div>
-          <p className="xtra-title mt-10 text-white">
-            <span className="font-bold">XTR</span>ALIVING
-          </p>
+          <img src={rishiSignature} alt="" />
         </div>
         <div>
           <Link to={'/myStory'} className="text-[#FBF8F0]">My Story</Link>
           <Link to={'/contact'} className="text-[#FBF8F0]">Contact</Link>
-          <Link className="text-[#FBF8F0]">Public Speaking</Link>
+          <a className="text-[#FBF8F0]">Public Speaking</a>
           <a className="text-[#FBF8F0]">Latest videos</a>
           <a className="text-[#FBF8F0]">FUNc Community</a>
           <Link to={'/return'} className="text-[#FBF8F0]">Return</Link>
@@ -57,7 +56,7 @@ const Footer = () => {
         </a>
       </div>
     </div>
-  );
+    );
 };
 
-export default Footer;
+export default PersonalFooter;

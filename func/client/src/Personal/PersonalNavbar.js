@@ -1,21 +1,21 @@
 import React, { useContext } from "react";
 import { useState } from "react";
-import "./Navbar.css";
-import { Link, NavLink } from "react-router-dom";
-import { AuthContext } from "../../contexts/AuthProvider";
-import toast, { Toaster } from "react-hot-toast";
-const Navbar = () => {
 
+import { Link, NavLink } from "react-router-dom";
+
+import toast, { Toaster } from "react-hot-toast";
+import rishiSignature from "../assets/rishi-nav.png";
+import { AuthContext } from "../contexts/AuthProvider";
+
+const PersonalNavbar = () => {
   const { user, logout } = useContext(AuthContext);
 
   console.log(user?.displayName, user?.email);
 
-  
-  
   const handleLogOut = () => {
     logout()
       .then(() => {
-        toast.success('Logged Out Successfully')
+        toast.success("Logged Out Successfully");
       })
       .catch((error) => console.log(error));
   };
@@ -34,9 +34,6 @@ const Navbar = () => {
       <li className="mb-2 md:mb-0 lg:mb-0">
         <Link to="/product">PRODUCT</Link>
       </li>
-      <li className="mb-2 md:mb-0 lg:mb-0">
-        <Link to="/personal">PERSONAL</Link>
-      </li>
 
       {user?.uid ? (
         <>
@@ -52,15 +49,13 @@ const Navbar = () => {
     </>
   );
   let [open, setOpen] = useState(false);
+
   return (
     <div className="shadow-md w-full fixed top-0 z-50">
       <Toaster></Toaster>
-      <div className="md:flex sm:gap-5 items-center justify-between bg-nav  py-4 md:px-10 px-7">
-        <Link
-          to="/"
-          className="font-bold text-2xl cursor-pointer flex items-center text-gray-800"
-        >
-          XTRALIVING
+      <div className="md:flex sm:gap-5 items-center justify-between bg-nav lg:py-0 md:px-10 px-7">
+        <Link to="/">
+          <img src={rishiSignature} alt="" className="pt-5 w-[95px]" />
         </Link>
 
         <div
@@ -72,7 +67,7 @@ const Navbar = () => {
 
         <ul
           className={`md:flex md:items-center md:pb-0 pb-12 gap-4 lg:gap-10 absolute md:static bg-nav md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in ${
-            open ? "top-16 " : "top-[-490px]"
+            open ? "top-20 " : "top-[-495px]"
           }`}
         >
           {menuItems}
@@ -82,4 +77,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default PersonalNavbar;

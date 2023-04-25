@@ -210,13 +210,14 @@ const Header = () => {
         </div>
       </div>
 
-      <div className="lg:block md:block hidden">
+      
+      {/* <div className="lg:block md:block hidden">
         <div className="flex justify-end mt-[-220px] mr-[100px] lg:max-w-screen-lg">
           <button className="btn bg-[#121942] w-36">Buy Now</button>
         </div>
-      </div>
+      </div> */}
 
-      <div className="lg:hidden md:hidden block">
+<div className="block">
         <div className="flex justify-center">
           <button className="btn w-36 bg-[#121942]">Buy Now</button>
         </div>

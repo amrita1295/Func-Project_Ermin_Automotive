@@ -1,0 +1,24 @@
+.bg-contact{
+  background-color: #FBF8F0;  
+}
+
+.container-1 {
+  position: relative;
+  text-align: center;
+  color: white;
+  margin: 0 auto;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.contact-title {
+  color: #000000;
+  font-size: 25px;
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
+}

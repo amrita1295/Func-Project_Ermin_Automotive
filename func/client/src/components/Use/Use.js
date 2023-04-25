@@ -47,7 +47,7 @@ const Use = () => {
         </div>
       </div>
 
-      <div className="">
+      {/* <div className="">
         <div
           tabIndex={0}
           className="badge1  border border-base-300 bg-base-100 rounded-box w-80 img-3 hidden lg:block"
@@ -59,9 +59,9 @@ const Use = () => {
             </p>
           </div>
         </div>
-      </div>
+      </div> */}
 
-      <div className="lg:hidden block">
+      <div className="block">
         <div className="flex justify-center mt-12 ">
           <div
             tabIndex={0}

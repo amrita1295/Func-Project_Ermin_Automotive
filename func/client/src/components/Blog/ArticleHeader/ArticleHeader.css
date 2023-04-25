@@ -1,0 +1,17 @@
+.blog-header-bg{
+    background-image: url('../../../assets/blog-float.png');
+}
+.bg-blog-1{
+    background-color: #FBF8F0;
+}
+
+.bg-blog{
+    background-color: #FBF8F0;
+    background-image: url('../../../assets/blog-float-2.png');
+}
+.article-title{
+    color: #000000;
+    font-size: 40px;
+    font-family: "Oswald", sans-serif;
+    font-weight: 700;
+}

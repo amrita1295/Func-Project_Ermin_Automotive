@@ -1,0 +1,21 @@
+.privacy-bg{
+    background-color: #FBF8F0;
+}
+
+.privacy-title{
+    color: #000000;
+    font-size: 40px;
+    font-family: "Oswald", sans-serif;
+    font-weight: 700;
+}
+
+.collapse-content {
+    grid-row-start: 2;
+    overflow: hidden;
+    max-height: 0px;
+    /* padding-left: 1rem; */
+    padding-right: 1rem;
+    padding-left: 0rem !important;
+    cursor: unset;
+    transition: padding 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
